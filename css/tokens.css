@@ -1,0 +1,57 @@
+:root {
+  /* Palette — derived from the Avícola La Madrina badge logo */
+  --color-cream: #fdf6ec;
+  --color-cream-deep: #f4e6d3;
+  --color-cream-line: #e8d3b3;
+
+  --color-brown-900: #3a2110;
+  --color-brown-800: #4a2810;
+  --color-brown-700: #6b3a14;
+  --color-brown-500: #9b631c;
+  --color-brown-300: #c99257;
+
+  --color-terracotta: #c97b3d;
+
+  --color-yolk: #f2a63d;
+  --color-yolk-dark: #d9871f;
+
+  --color-whatsapp: #3f9142;
+  --color-whatsapp-dark: #2f7a34;
+
+  --color-white: #ffffff;
+  --color-ink: #2a1b10;
+
+  /* Type */
+  --font-display: "Baloo 2", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, -apple-system, sans-serif;
+
+  --text-xs: clamp(0.8rem, 0.78rem + 0.1vw, 0.875rem);
+  --text-base: clamp(1rem, 0.96rem + 0.2vw, 1.125rem);
+  --text-lg: clamp(1.15rem, 1.08rem + 0.35vw, 1.375rem);
+  --text-xl: clamp(1.4rem, 1.25rem + 0.75vw, 1.875rem);
+  --text-2xl: clamp(1.9rem, 1.6rem + 1.5vw, 2.75rem);
+  --text-hero: clamp(2.6rem, 1.9rem + 3.2vw, 4.5rem);
+
+  /* Space */
+  --space-xs: clamp(0.5rem, 0.45rem + 0.25vw, 0.75rem);
+  --space-sm: clamp(0.9rem, 0.8rem + 0.5vw, 1.25rem);
+  --space-md: clamp(1.5rem, 1.3rem + 1vw, 2.25rem);
+  --space-lg: clamp(2.5rem, 2rem + 2.5vw, 4rem);
+  --space-section: clamp(4rem, 3.2rem + 4vw, 7rem);
+
+  /* Shape */
+  --radius-sm: 0.6rem;
+  --radius-md: 1.25rem;
+  --radius-lg: 2rem;
+  --radius-pill: 999px;
+
+  /* Motion */
+  --duration-fast: 150ms;
+  --duration-normal: 320ms;
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Shadow */
+  --shadow-card: 0 12px 30px -12px rgba(58, 33, 16, 0.28);
+  --shadow-lift: 0 20px 40px -16px rgba(58, 33, 16, 0.35);
+  --shadow-soft: 0 4px 14px -6px rgba(58, 33, 16, 0.2);
+}

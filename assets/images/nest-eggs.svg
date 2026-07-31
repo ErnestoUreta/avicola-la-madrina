@@ -1,0 +1,32 @@
+<svg viewBox="0 0 520 460" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ilustración de un nido con huevos frescos">
+  <ellipse cx="260" cy="250" rx="230" ry="180" fill="#f4e6d3"/>
+
+  <g transform="translate(120,60) rotate(-14)">
+    <path d="M0 150 C 8 90, 8 50, 0 0" fill="none" stroke="#c99257" stroke-width="6" stroke-linecap="round"/>
+    <g fill="#8fae63">
+      <ellipse cx="-12" cy="24" rx="15" ry="9" transform="rotate(-20 -12 24)"/>
+      <ellipse cx="14" cy="52" rx="15" ry="9" transform="rotate(20 14 52)"/>
+      <ellipse cx="-12" cy="80" rx="15" ry="9" transform="rotate(-20 -12 80)"/>
+    </g>
+  </g>
+  <g transform="translate(400,70) rotate(14) scale(-1,1)">
+    <path d="M0 150 C 8 90, 8 50, 0 0" fill="none" stroke="#c99257" stroke-width="6" stroke-linecap="round"/>
+    <g fill="#8fae63">
+      <ellipse cx="-12" cy="24" rx="15" ry="9" transform="rotate(-20 -12 24)"/>
+      <ellipse cx="14" cy="52" rx="15" ry="9" transform="rotate(20 14 52)"/>
+      <ellipse cx="-12" cy="80" rx="15" ry="9" transform="rotate(-20 -12 80)"/>
+    </g>
+  </g>
+
+  <g stroke="#7f3f07" stroke-width="7">
+    <ellipse cx="188" cy="300" rx="52" ry="66" fill="#fff3df"/>
+    <ellipse cx="300" cy="285" rx="58" ry="72" fill="#ffeed2"/>
+    <ellipse cx="368" cy="310" rx="48" ry="60" fill="#fff3df"/>
+  </g>
+
+  <path d="M70 360 C 70 420, 150 400, 260 400 C 370 400, 450 420, 450 360 L 450 400 C 450 430, 370 440, 260 440 C 150 440, 70 430, 70 400 Z" fill="#c9923a" stroke="#7f3f07" stroke-width="7" stroke-linejoin="round"/>
+  <g stroke="#7f3f07" stroke-width="4" opacity="0.5" fill="none">
+    <path d="M110 375 C 150 400, 370 400, 410 375"/>
+    <path d="M95 392 C 150 415, 370 415, 425 392"/>
+  </g>
+</svg>

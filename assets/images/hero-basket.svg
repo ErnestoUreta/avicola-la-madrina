@@ -1,0 +1,77 @@
+<svg viewBox="0 0 640 640" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ilustración de una canasta de huevos frescos con una gallina">
+  <defs>
+    <radialGradient id="sunGlow" cx="50%" cy="42%" r="60%">
+      <stop offset="0%" stop-color="#fff3df"/>
+      <stop offset="100%" stop-color="#f4e6d3" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <circle cx="320" cy="300" r="270" fill="url(#sunGlow)"/>
+
+  <g stroke="#e8d3b3" stroke-width="10" stroke-linecap="round" opacity="0.9">
+    <line x1="320" y1="30" x2="320" y2="80"/>
+    <line x1="150" y1="80" x2="180" y2="118"/>
+    <line x1="490" y1="80" x2="460" y2="118"/>
+    <line x1="70" y1="230" x2="118" y2="240"/>
+    <line x1="570" y1="230" x2="522" y2="240"/>
+  </g>
+
+  <!-- wheat sprig left -->
+  <g transform="translate(96,330) rotate(-18)">
+    <path d="M0 180 C 10 110, 10 60, 0 0" fill="none" stroke="#c99257" stroke-width="7" stroke-linecap="round"/>
+    <g fill="#c97b3d">
+      <ellipse cx="-14" cy="20" rx="12" ry="20" transform="rotate(-25 -14 20)"/>
+      <ellipse cx="14" cy="40" rx="12" ry="20" transform="rotate(25 14 40)"/>
+      <ellipse cx="-14" cy="62" rx="12" ry="20" transform="rotate(-25 -14 62)"/>
+      <ellipse cx="14" cy="84" rx="12" ry="20" transform="rotate(25 14 84)"/>
+      <ellipse cx="-14" cy="106" rx="12" ry="20" transform="rotate(-25 -14 106)"/>
+    </g>
+  </g>
+
+  <!-- wheat sprig right -->
+  <g transform="translate(544,330) rotate(18) scale(-1,1)">
+    <path d="M0 180 C 10 110, 10 60, 0 0" fill="none" stroke="#c99257" stroke-width="7" stroke-linecap="round"/>
+    <g fill="#c97b3d">
+      <ellipse cx="-14" cy="20" rx="12" ry="20" transform="rotate(-25 -14 20)"/>
+      <ellipse cx="14" cy="40" rx="12" ry="20" transform="rotate(25 14 40)"/>
+      <ellipse cx="-14" cy="62" rx="12" ry="20" transform="rotate(-25 -14 62)"/>
+      <ellipse cx="14" cy="84" rx="12" ry="20" transform="rotate(25 14 84)"/>
+      <ellipse cx="-14" cy="106" rx="12" ry="20" transform="rotate(-25 -14 106)"/>
+    </g>
+  </g>
+
+  <!-- hen behind basket -->
+  <g transform="translate(400,255)">
+    <ellipse cx="0" cy="40" rx="92" ry="78" fill="#e8a25c"/>
+    <ellipse cx="0" cy="40" rx="92" ry="78" fill="none" stroke="#7f3f07" stroke-width="8"/>
+    <path d="M-70 -10 C -95 -55, -55 -95, -10 -80 C 20 -70, 15 -30, -10 -20 Z" fill="#f2a63d" stroke="#7f3f07" stroke-width="8" stroke-linejoin="round"/>
+    <circle cx="-52" cy="-38" r="26" fill="#ffeed2" stroke="#7f3f07" stroke-width="8"/>
+    <circle cx="-46" cy="-42" r="4.5" fill="#3a2110"/>
+    <path d="M-70 -60 C -66 -72, -50 -76, -42 -66" fill="none" stroke="#c9392f" stroke-width="7" stroke-linecap="round"/>
+    <path d="M-78 -34 L-96 -30 L-78 -22 Z" fill="#e2a13d" stroke="#7f3f07" stroke-width="6" stroke-linejoin="round"/>
+  </g>
+
+  <!-- basket -->
+  <g transform="translate(320,430)">
+    <path d="M-190 -30 C -190 80, -130 130, 0 130 C 130 130, 190 80, 190 -30 Z" fill="#c9923a"/>
+    <path d="M-190 -30 C -190 80, -130 130, 0 130 C 130 130, 190 80, 190 -30 Z" fill="none" stroke="#7f3f07" stroke-width="9"/>
+    <g stroke="#7f3f07" stroke-width="5" opacity="0.55" fill="none">
+      <path d="M-176 -10 C -170 60, -110 110, 0 112"/>
+      <path d="M-140 -20 C -134 55, -80 100, 0 104"/>
+      <path d="M-96 -26 C -90 45, -50 90, 0 96"/>
+      <path d="M176 -10 C 170 60, 110 110, 0 112"/>
+      <path d="M140 -20 C 134 55, 80 100, 0 104"/>
+      <path d="M96 -26 C 90 45, 50 90, 0 96"/>
+    </g>
+    <path d="M-196 -28 C -110 -60, 110 -60, 196 -28 L 190 -8 C 110 -38, -110 -38, -190 -8 Z" fill="#e0ab55" stroke="#7f3f07" stroke-width="9" stroke-linejoin="round"/>
+  </g>
+
+  <!-- eggs -->
+  <g stroke="#7f3f07" stroke-width="7">
+    <ellipse cx="230" cy="410" rx="46" ry="58" fill="#fff3df"/>
+    <ellipse cx="320" cy="392" rx="50" ry="63" fill="#ffeed2"/>
+    <ellipse cx="410" cy="412" rx="46" ry="58" fill="#fff3df"/>
+    <ellipse cx="278" cy="440" rx="44" ry="55" fill="#ffeed2"/>
+    <ellipse cx="366" cy="440" rx="44" ry="55" fill="#fff3df"/>
+  </g>
+</svg>
