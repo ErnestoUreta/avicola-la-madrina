@@ -88,7 +88,49 @@ function wireDestacadosCarousel() {
   nextBtn.addEventListener("click", () => scrollByCard(1));
 }
 
+function wirePromoModal() {
+  const modal = document.getElementById("promo-modal");
+  if (!modal) return;
+
+  function readDismissedFlag() {
+    try {
+      return sessionStorage.getItem("promoModalDismissed") === "1";
+    } catch (error) {
+      return false;
+    }
+  }
+
+  function writeDismissedFlag() {
+    try {
+      sessionStorage.setItem("promoModalDismissed", "1");
+    } catch (error) {
+      // Storage unavailable (e.g. sandboxed preview) — just skip persisting.
+    }
+  }
+
+  const isMobile = window.matchMedia("(max-width: 640px)").matches;
+  if (!isMobile || readDismissedFlag()) return;
+
+  function closeModal() {
+    modal.setAttribute("hidden", "");
+    writeDismissedFlag();
+    document.removeEventListener("keydown", onKeydown);
+  }
+
+  function onKeydown(event) {
+    if (event.key === "Escape") closeModal();
+  }
+
+  modal.querySelectorAll("[data-promo-close]").forEach((el) => {
+    el.addEventListener("click", closeModal);
+  });
+
+  modal.removeAttribute("hidden");
+  document.addEventListener("keydown", onKeydown);
+}
+
 wireWhatsappLinks();
 wireMobileNav();
 wireHeroCarousel();
 wireDestacadosCarousel();
+wirePromoModal();

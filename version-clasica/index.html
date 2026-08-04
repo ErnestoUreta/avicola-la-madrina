@@ -47,33 +47,45 @@
   <section class="chero" id="inicio">
     <div class="chero__track" id="chero-track">
 
-      <div class="chero__slide is-active" style="background-image:url('../assets/images/photos/hero-straw-eggs.jpg')">
-        <div class="chero__overlay"></div>
-        <div class="container chero__slide-inner">
-          <p class="ceyebrow">Huevos de gallina feliz</p>
-          <h1>Huevos a precio justo,<br>solo de gallinas felices</h1>
-          <p class="chero__lead">Huevos frescos directo del campo. Calidad real, precio justo y entrega confiable.</p>
-          <a class="cbtn cbtn--yolk cbtn--lg js-whatsapp" data-wa-msg="Hola, quiero cotizar huevos" href="#">Cotiza ahora por WhatsApp</a>
+      <div class="chero__slide is-active">
+        <div class="chero__text-panel">
+          <div class="chero__slide-inner">
+            <p class="ceyebrow">Huevos de gallina feliz</p>
+            <h1>Huevos a precio justo,<br>solo de gallinas felices</h1>
+            <p class="chero__lead">Huevos frescos directo del campo. Calidad real, precio justo y entrega confiable.</p>
+            <a class="cbtn cbtn--yolk cbtn--lg js-whatsapp" data-wa-msg="Hola, quiero cotizar huevos" href="#">Cotiza ahora por WhatsApp</a>
+          </div>
+        </div>
+        <div class="chero__photo-panel">
+          <img src="../assets/images/photos/box-blanco.jpg" alt="Caja y bandejas de huevos Avícola La Madrina">
         </div>
       </div>
 
-      <div class="chero__slide" style="background-image:url('../assets/images/photos/countryside-hens.jpg')">
-        <div class="chero__overlay"></div>
-        <div class="container chero__slide-inner">
-          <p class="ceyebrow">Para tu negocio</p>
-          <h1>Precios mayoristas<br>desde 20 cajas</h1>
-          <p class="chero__lead">Abastece tu negocio con huevos frescos y precios especiales por volumen.</p>
-          <a class="cbtn cbtn--yolk cbtn--lg js-whatsapp" data-wa-msg="Hola, quiero consultar precios mayoristas" href="#">Consultar por WhatsApp</a>
+      <div class="chero__slide">
+        <div class="chero__text-panel">
+          <div class="chero__slide-inner">
+            <p class="ceyebrow">Para tu negocio</p>
+            <h1>Precios mayoristas<br>desde 20 cajas</h1>
+            <p class="chero__lead">Abastece tu negocio con huevos frescos y precios especiales por volumen.</p>
+            <a class="cbtn cbtn--yolk cbtn--lg js-whatsapp" data-wa-msg="Hola, quiero consultar precios mayoristas" href="#">Consultar por WhatsApp</a>
+          </div>
+        </div>
+        <div class="chero__photo-panel">
+          <img src="../assets/images/photos/box-color.jpg" alt="Caja y bandejas de huevos de campo Avícola La Madrina">
         </div>
       </div>
 
-      <div class="chero__slide" style="background-image:url('../assets/images/photos/hero-delivery-hands.jpg')">
-        <div class="chero__overlay"></div>
-        <div class="container chero__slide-inner">
-          <p class="ceyebrow">Directo a tu puerta</p>
-          <h1>Despacho a domicilio<br>en Santiago</h1>
-          <p class="chero__lead">Pide por WhatsApp y recibe tus huevos frescos sin salir de casa.</p>
-          <a class="cbtn cbtn--yolk cbtn--lg js-whatsapp" data-wa-msg="Hola, quiero coordinar un despacho a domicilio" href="#">Pedir por WhatsApp</a>
+      <div class="chero__slide">
+        <div class="chero__text-panel">
+          <div class="chero__slide-inner">
+            <p class="ceyebrow">Directo a tu puerta</p>
+            <h1>Despacho a domicilio<br>en Santiago</h1>
+            <p class="chero__lead">Pide por WhatsApp y recibe tus huevos frescos sin salir de casa.</p>
+            <a class="cbtn cbtn--yolk cbtn--lg js-whatsapp" data-wa-msg="Hola, quiero coordinar un despacho a domicilio" href="#">Pedir por WhatsApp</a>
+          </div>
+        </div>
+        <div class="chero__photo-panel">
+          <img src="../assets/images/photos/hero-delivery-hands.jpg" alt="Entrega de huevos a domicilio">
         </div>
       </div>
 
@@ -158,30 +170,44 @@
     </div>
   </section>
 
-  <!-- TIPOS DE HUEVO -->
-  <section class="ctipos" id="tipos">
-    <img class="ctipos__bg" src="../assets/images/photos/tipos-eggs-row.jpg" alt="" loading="lazy">
-    <div class="ctipos__overlay"></div>
-    <div class="container ctipos__content">
-      <p class="ceyebrow">Nuestro catálogo</p>
-      <h2>Elige tu huevo ideal</h2>
-      <div class="ctipos__row">
-        <a class="ctipos__item js-whatsapp" data-wa-msg="Hola, quiero pedir huevos de Primera" href="#">
-          <strong>$6.500</strong>
-          <span>Primera</span>
-        </a>
-        <a class="ctipos__item js-whatsapp" data-wa-msg="Hola, quiero pedir huevos Extra" href="#">
-          <strong>$7.000</strong>
-          <span>Extra</span>
-        </a>
-        <a class="ctipos__item js-whatsapp" data-wa-msg="Hola, quiero pedir huevos Súper Extra" href="#">
-          <strong>$7.500</strong>
-          <span>Súper Extra</span>
-        </a>
-        <a class="ctipos__item js-whatsapp" data-wa-msg="Hola, quiero pedir huevos de Campo" href="#">
-          <strong>$9.500</strong>
-          <span>Campo</span>
-        </a>
+  <!-- CATÁLOGO -->
+  <section class="ccatalogo" id="tipos">
+    <div class="container">
+      <div class="csection-head">
+        <p class="ceyebrow">Nuestro catálogo</p>
+        <h2>Todos nuestros huevos</h2>
+      </div>
+
+      <div class="ccatalogo__grid">
+        <div class="ccatalogo__col">
+          <h3>Blanco</h3>
+          <ul class="ccatalogo__list">
+            <li><span class="ccatalogo__name">Primera</span><a class="js-whatsapp" data-wa-msg="Hola, quiero cotizar huevos Blanco Primera" href="#">Cotizar</a></li>
+            <li><span class="ccatalogo__name">Extra</span><a class="js-whatsapp" data-wa-msg="Hola, quiero cotizar huevos Blanco Extra" href="#">Cotizar</a></li>
+            <li><span class="ccatalogo__name">Súper Extra</span><a class="js-whatsapp" data-wa-msg="Hola, quiero cotizar huevos Blanco Súper Extra" href="#">Cotizar</a></li>
+            <li><span class="ccatalogo__name">Jumbo</span><a class="js-whatsapp" data-wa-msg="Hola, quiero cotizar huevos Blanco Jumbo" href="#">Cotizar</a></li>
+          </ul>
+        </div>
+
+        <div class="ccatalogo__col">
+          <h3>Color</h3>
+          <ul class="ccatalogo__list">
+            <li><span class="ccatalogo__name">Primera</span><a class="js-whatsapp" data-wa-msg="Hola, quiero cotizar huevos Color Primera" href="#">Cotizar</a></li>
+            <li><span class="ccatalogo__name">Extra</span><a class="js-whatsapp" data-wa-msg="Hola, quiero cotizar huevos Color Extra" href="#">Cotizar</a></li>
+            <li><span class="ccatalogo__name">Súper Extra</span><a class="js-whatsapp" data-wa-msg="Hola, quiero cotizar huevos Color Súper Extra" href="#">Cotizar</a></li>
+            <li><span class="ccatalogo__name">Jumbo</span><a class="js-whatsapp" data-wa-msg="Hola, quiero cotizar huevos Color Jumbo" href="#">Cotizar</a></li>
+          </ul>
+        </div>
+
+        <div class="ccatalogo__col">
+          <h3>Campo</h3>
+          <ul class="ccatalogo__list">
+            <li><span class="ccatalogo__name">Primera</span><a class="js-whatsapp" data-wa-msg="Hola, quiero cotizar huevos de Campo Primera" href="#">Cotizar</a></li>
+            <li><span class="ccatalogo__name">Extra</span><a class="js-whatsapp" data-wa-msg="Hola, quiero cotizar huevos de Campo Extra" href="#">Cotizar</a></li>
+            <li><span class="ccatalogo__name">Súper Extra</span><a class="js-whatsapp" data-wa-msg="Hola, quiero cotizar huevos de Campo Súper Extra" href="#">Cotizar</a></li>
+            <li><span class="ccatalogo__name">Jumbo</span><a class="js-whatsapp" data-wa-msg="Hola, quiero cotizar huevos de Campo Jumbo" href="#">Cotizar</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
@@ -235,6 +261,17 @@
 <a class="cwhatsapp-float js-whatsapp" data-wa-msg="Hola, quiero hacer una consulta" href="#" aria-label="Escríbenos por WhatsApp">
   <svg viewBox="0 0 24 24" width="30" height="30"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.6.1-.2.2-.6.8-.8 1-.1.2-.3.2-.5.1-1.4-.7-2.3-1.3-3.2-2.8-.2-.4.2-.4.6-1.2.1-.1 0-.3 0-.4C10.3 9.8 9.8 8.6 9.6 8.1c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.2-.9.9-.9 2.2s1 2.6 1.1 2.8c.1.2 1.9 3 4.7 4.1.7.3 1.2.4 1.6.5.7.2 1.3.2 1.8.1.5-.1 1.4-.6 1.6-1.1.2-.5.2-1 .1-1.1-.1-.1-.3-.2-.5-.3Z"/></svg>
 </a>
+
+<div class="cpromo-modal" id="promo-modal" role="dialog" aria-modal="true" aria-labelledby="promo-modal-title" hidden>
+  <div class="cpromo-modal__backdrop" data-promo-close></div>
+  <div class="cpromo-modal__card">
+    <button class="cpromo-modal__close" data-promo-close aria-label="Cerrar">✕</button>
+    <p class="cpromo-modal__icon">🚚</p>
+    <h3 id="promo-modal-title">Despacho gratis</h3>
+    <p>Región Metropolitana en compras desde <strong>$50.000</strong></p>
+    <a class="cbtn cbtn--whatsapp cbtn--block js-whatsapp" data-wa-msg="Hola, quiero hacer un pedido" href="#" data-promo-close>Quiero mi pedido</a>
+  </div>
+</div>
 
 <script src="js/clasica.js"></script>
 </body>
