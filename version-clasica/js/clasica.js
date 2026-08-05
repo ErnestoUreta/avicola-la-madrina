@@ -1,4 +1,4 @@
-const WHATSAPP_NUMBER = "56999977567";
+const WHATSAPP_NUMBER = "56937188788";
 const HERO_AUTOPLAY_MS = 5500;
 
 function wireWhatsappLinks() {

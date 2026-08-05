@@ -1,4 +1,4 @@
-const WHATSAPP_NUMBER = "56999977567";
+const WHATSAPP_NUMBER = "56937188788";
 
 function wireWhatsappLinks() {
   document.querySelectorAll(".js-whatsapp").forEach((link) => {
