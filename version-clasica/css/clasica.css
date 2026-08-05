@@ -79,7 +79,7 @@ a { color: inherit; text-decoration: none; }
 .chero__track { position: relative; }
 .chero__slide {
   position: absolute; inset: 0; display: grid; grid-template-columns: 1fr 1fr;
-  min-height: clamp(480px, 40vw, 620px);
+  height: 780px;
   opacity: 0; visibility: hidden; transition: opacity 700ms var(--ease-out-expo);
 }
 .chero__slide.is-active { opacity: 1; visibility: visible; position: relative; }
@@ -89,7 +89,7 @@ a { color: inherit; text-decoration: none; }
 .chero__slide .ceyebrow { color: var(--color-terracotta); }
 .chero__lead { font-size: var(--text-lg); color: var(--color-brown-700); }
 .chero__photo-panel { position: relative; overflow: hidden; background: var(--color-brown-800); }
-.chero__photo-panel > img { width: 100%; height: 100%; object-fit: cover; }
+.chero__photo-panel > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 .chero__dots { position: absolute; left: var(--space-lg); bottom: var(--space-sm); z-index: 3; display: flex; gap: 0.6rem; }
 .chero__dots button {
   width: 10px; height: 10px; border-radius: 50%; border: none; background: var(--color-cream-line);
@@ -211,21 +211,17 @@ a { color: inherit; text-decoration: none; }
 @keyframes cpulse { 0%,100% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--color-whatsapp) 50%, transparent), var(--shadow-lift); } 50% { box-shadow: 0 0 0 10px transparent, var(--shadow-lift); } }
 @media (prefers-reduced-motion: reduce) { .cwhatsapp-float { animation: none; } .chero__slide { transition: none; } }
 
-/* Free-shipping bar — small, permanent, non-blocking (mobile only) */
-.cfreebar {
-  display: none;
-  position: fixed; left: 0; right: 0; bottom: 0; z-index: 60;
+/* Free-shipping badge — pinned under the header WhatsApp button, always visible */
+.chdr__wa-wrap { position: relative; display: flex; align-items: center; }
+.chdr__freebadge {
+  position: absolute; top: 100%; left: 50%; transform: translateX(-50%); margin-top: 6px;
+  width: max-content; max-width: 150px;
   background: var(--color-brown-900); color: var(--color-cream);
-  text-align: center; font-size: 0.7rem; font-weight: 600; line-height: 1.3;
-  padding: 0.4rem 0.8rem;
+  text-align: center; font-size: 0.62rem; font-weight: 600; line-height: 1.3;
+  padding: 0.3em 0.6em; border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-soft);
 }
-.cfreebar strong { font-family: var(--font-display); color: var(--color-yolk); }
-
-@media (max-width: 640px) {
-  .cfreebar { display: block; }
-  .cwhatsapp-float { bottom: calc(var(--space-sm) + 30px); }
-  body { padding-bottom: 30px; }
-}
+.chdr__freebadge strong { font-family: var(--font-display); color: var(--color-yolk); }
 
 /* Responsive */
 @media (max-width: 860px) {
@@ -243,7 +239,7 @@ a { color: inherit; text-decoration: none; }
   .cmenu-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
   .chdr__brand span { display: none; }
 
-  .chero__slide { grid-template-columns: 1fr; grid-template-rows: auto 220px; min-height: 0; }
+  .chero__slide { grid-template-columns: 1fr; grid-template-rows: auto 220px; height: auto; min-height: 0; }
   .chero__text-panel { padding: var(--space-md); text-align: center; }
   .chero__slide-inner { max-width: 100%; margin-inline: auto; }
   .chero__slide-inner .cbtn { margin-inline: auto; }
