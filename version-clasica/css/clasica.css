@@ -211,28 +211,21 @@ a { color: inherit; text-decoration: none; }
 @keyframes cpulse { 0%,100% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--color-whatsapp) 50%, transparent), var(--shadow-lift); } 50% { box-shadow: 0 0 0 10px transparent, var(--shadow-lift); } }
 @media (prefers-reduced-motion: reduce) { .cwhatsapp-float { animation: none; } .chero__slide { transition: none; } }
 
-/* Promo modal — mobile free-shipping popup */
-.cpromo-modal { position: fixed; inset: 0; z-index: 100; display: flex; align-items: center; justify-content: center; padding: var(--space-md); }
-.cpromo-modal[hidden] { display: none; }
-.cpromo-modal__backdrop { position: absolute; inset: 0; background: rgba(42,23,10,0.6); backdrop-filter: blur(2px); }
-.cpromo-modal__card {
-  position: relative; z-index: 1; width: min(340px, 100%);
-  background: var(--color-cream); border-radius: var(--radius-lg); box-shadow: var(--shadow-lift);
-  padding: var(--space-lg) var(--space-md) var(--space-md); text-align: center;
-  animation: cpromoIn 350ms var(--ease-out-expo);
+/* Free-shipping bar — small, permanent, non-blocking (mobile only) */
+.cfreebar {
+  display: none;
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 60;
+  background: var(--color-brown-900); color: var(--color-cream);
+  text-align: center; font-size: 0.7rem; font-weight: 600; line-height: 1.3;
+  padding: 0.4rem 0.8rem;
 }
-@keyframes cpromoIn { from { opacity: 0; transform: translateY(16px) scale(0.97); } to { opacity: 1; transform: translateY(0) scale(1); } }
-.cpromo-modal__icon { font-size: 2.4rem; margin: 0 0 0.3rem; }
-.cpromo-modal__card h3 { margin-bottom: 0.4rem; }
-.cpromo-modal__card p { color: var(--color-brown-700); }
-.cpromo-modal__card p strong { font-family: var(--font-display); color: var(--color-terracotta); }
-.cpromo-modal__card .cbtn { margin-top: var(--space-sm); }
-.cpromo-modal__close {
-  position: absolute; top: 0.6rem; right: 0.6rem; width: 2rem; height: 2rem; border-radius: 50%;
-  border: none; background: var(--color-cream-deep); color: var(--color-brown-700); cursor: pointer;
-  font-size: 0.9rem; line-height: 1; transition: background-color var(--duration-fast);
+.cfreebar strong { font-family: var(--font-display); color: var(--color-yolk); }
+
+@media (max-width: 640px) {
+  .cfreebar { display: block; }
+  .cwhatsapp-float { bottom: calc(var(--space-sm) + 30px); }
+  body { padding-bottom: 30px; }
 }
-.cpromo-modal__close:hover { background: var(--color-yolk); }
 
 /* Responsive */
 @media (max-width: 860px) {
